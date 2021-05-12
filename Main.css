@@ -4,6 +4,17 @@
 }
 
 body {
+  font-family: "Courier New", Courier, monospace;
+  font-size: medium;
+  color: black;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -28,51 +39,57 @@ body {
   background-color: papayawhip;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-
-  grid-template-areas:
-    ". . . ."
-    "seven eight nine equal"
-    "four five six equal"
-    "one two three equal"
-    "zeros decimal clear equal";
+  grid-template-areas: ". . . ." "seven eight nine equal" "four five six equal" "one two three equal" "zeros decimal clear equal";
 }
 
 .one {
   grid-area: one;
 }
+
 .two {
   grid-area: two;
 }
+
 .three {
   grid-area: three;
 }
+
 .four {
   grid-area: four;
 }
+
 .five {
   grid-area: five;
 }
+
 .six {
   grid-area: six;
 }
+
 .seven {
   grid-area: seven;
 }
+
 .eight {
   grid-area: eight;
 }
+
 .nine {
   grid-area: nine;
 }
+
 .zeros {
   grid-area: zeros;
 }
+
 .decimal {
   grid-area: decimal;
 }
+
 .clear {
   grid-area: clear;
 }
+
 .equal {
   grid-area: equal;
   background-color: fuchsia;
