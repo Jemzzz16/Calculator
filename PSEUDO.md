@@ -21,11 +21,18 @@
 - Java
 - CSS animation
 - 1-9
-- - - $times / AC DEL
+- $times / AC / DEL
 
 ## Code solutions
 
 ---
+
+Number function
+Operation function
+
+- number - display
+- number and operation - display
+- Clear needs to
 
 parent container (calculator) display keys (buttons)
 grid layout to contain all the elements
@@ -34,5 +41,7 @@ body H + W - mobile
 background colour gradient
 google fonts
 box shadow for calculator
+
+---
 
 </p>
