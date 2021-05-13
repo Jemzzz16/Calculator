@@ -20,6 +20,8 @@
 
 - Java
 - CSS animation
+- 1-9
+- - - $times / AC DEL
 
 ## Code solutions
 

@@ -8,30 +8,31 @@
     <link rel="stylesheet" href="main.css" />
   </head>
   <body>
-    <div class="container">
+    <div class="calculator-grid">
       <div class="calculator">
         <div class="calculator__display">0</div>
         <div class="calculator__keys">
-          <button class="number clear">AC</button>
-          <button class="number decimal">.</button>
-          <button class="equal">=</button>
-          <button class="operator divide">/</button>
-          <button class="operator times">&times;</button>
-          <button class="operator minus">-</button>
-          <button class="operator plus">+</button>
+          <button data-clear class="number clear">AC</button>
+          <button data-equal class="equal">=</button>
+          <button data-operation class="operator divide">/</button>
+          <button data-operation class="operator times">&times;</button>
+          <button data-operation class="operator minus">+</button>
+          <button data-operation class="operator plus">-</button>
 
-          <button class="number one">1</button>
-          <button class="number two">2</button>
-          <button class="number three">3</button>
-          <button class="number four">4</button>
-          <button class="number five">5</button>
-          <button class="number six">6</button>
-          <button class="number seven">7</button>
-          <button class="number eight">8</button>
-          <button class="number nine">9</button>
-          <button class="number zeros">0</button>
+          <button data-number class="number decimal">.</button>
+          <button data-number class="number one">1</button>
+          <button data-number class="number two">2</button>
+          <button data-number class="number three">3</button>
+          <button data-number class="number four">4</button>
+          <button data-number class="number five">5</button>
+          <button data-number class="number six">6</button>
+          <button data-number class="number seven">7</button>
+          <button data-number class="number eight">8</button>
+          <button data-number class="number nine">9</button>
+          <button data-number class="number zeros">0</button>
         </div>
       </div>
     </div>
   </body>
+  <script src="./main.js"></script>
 </html>
