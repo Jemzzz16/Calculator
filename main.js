@@ -6,8 +6,9 @@
 
 const display = document.querySelector('.calculator__display')
 const clear = document.querySelector('.clear')
-
 const keys = document.querySelector(".calculator__keys");
+const calculator = document.querySelector('.calculator')
+
 
 keys.addEventListener('click', event => {
     if (!event.target.closest('button')) return
@@ -15,19 +16,31 @@ keys.addEventListener('click', event => {
     const key = event.target
     const keyValue = key.textContent
     const displayValue = display.textContent
+    const { type } = key.dataset
+    const { previousKeyType } = calculator.dataset
 
     // number key
-   if (key.classList.contains ('number')) { 
+    
+   if (type === 'number') { 
     if (displayValue === '0') {
         display.textContent = keyValue 
+     } else if (previousKeyType === 'operator') // allows for refresh after operator key
+        {
+        display.textContent = keyValue
      } else {
         display.textContent = displayValue + keyValue
         };
+        calculator.dataset.previousKeyType = 'number' // refresh from remember operator to number 
     }   
         
     // operator key
-    if (key.classList.contains ('operator')) {
+    if (type === 'operator') {
         console.log(key);
-    }
 
+        calculator.dataset.previousKeyType = 'operator'
+    }
+     // calculation
+    if (type === 'equal') {
+        
+    }
 }); 
