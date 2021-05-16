@@ -19,8 +19,7 @@ keys.addEventListener('click', event => {
     const { type } = key.dataset
     const { previousKeyType } = calculator.dataset
 
-    // number key
-    
+    // number keys
    if (type === 'number') { 
     if (displayValue === '0') {
         display.textContent = keyValue 
@@ -33,14 +32,30 @@ keys.addEventListener('click', event => {
         calculator.dataset.previousKeyType = 'number' // refresh from remember operator to number 
     }   
         
-    // operator key
+    // operator keys
     if (type === 'operator') {
-        console.log(key);
+        const operatorKeys = keys.querySelectorAll('[data-type="operator"]')
+        operatorKeys.forEach(el => {el.dataset.state = ''})  // el -> element 
+        key.dataset.state = 'selected'
 
-        calculator.dataset.previousKeyType = 'operator'
+        calculator.dataset.firstNumber = display
+        calculator.dataset.operator = key.dataset.key
+       
     }
      // calculation
     if (type === 'equal') {
-        
+        const firstNumber = pasteInt(calculator.dataset.firstNumber)
+        const operator = calculator.dataset.operator
+        const secondNumber = pasteInt(displayValue)
+
+        let result = ''
+        if (operator === 'plus') result = firstNumber + secondNumber
+        // firstNumber * secondNumber 
+        // firstNumber - secondNumber
+        // firstNumber + secondNumber
+        // firstNumber / secondNumber
+
+        display.textContent = result
     }
+    calculator.dataset.previousKeyType = type
 }); 
