@@ -14,14 +14,14 @@ keys.addEventListener('click', event => {
     const keyValue = opKey.textContent //key value is the number key selected
 
     // DISPLAY NUMBERS - this allows for number to be displayed and subsequent numbers too
-    if (displayedNum === '0'|| previousKeyType === 'operator') { 
+    if (displayedNum === '0') { 
         display.textContent = keyValue
     } else {
         display.textContent = displayedNum + keyValue
 
     } if (numType === 'decimal') {
         display.textContent = displayedNum + '.'
-        calculator.dataset.previousKeyType = 'operator'
+      
     }
 
     console.log(numType.innerHTML);  
