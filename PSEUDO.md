@@ -42,6 +42,8 @@ background colour gradient
 google fonts
 box shadow for calculator
 
+
+calculator.dataset.previousKeyType = 'number' - refresh from remember operator to number 
 ---
 
 </p>

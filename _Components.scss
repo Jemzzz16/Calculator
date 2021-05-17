@@ -1,0 +1,61 @@
+.number:hover {
+    background-color: coral;
+  }
+  
+  .equal:hover {
+    background-color: coral;
+  }
+  
+  .operator:hover {
+    background-color: coral;
+  }
+  
+  .one {
+    grid-area: one;
+  }
+  .two {
+    grid-area: two;
+  }
+  .three {
+    grid-area: three;
+  }
+  .four {
+    grid-area: four;
+  }
+  .five {
+    grid-area: five;
+  }
+  .six {
+    grid-area: six;
+  }
+  .seven {
+    grid-area: seven;
+  }
+  .eight {
+    grid-area: eight;
+  }
+  .nine {
+    grid-area: nine;
+  }
+  .zeros {
+    grid-area: zeros;
+  }
+  .decimal {
+    grid-area: decimal;
+  }
+  .clear {
+    grid-area: clear;
+  }
+  .equal {
+    grid-area: equal;
+    background-color: fuchsia;
+  }
+  
+  .operator {
+    background-color: #e5b9fa;
+    border-radius: 0.3rem;
+  }
+  .number {
+    background-color: lightpink;
+    border-radius: 0.3rem;
+  }
