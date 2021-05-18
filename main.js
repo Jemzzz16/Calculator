@@ -108,14 +108,6 @@ const inputNumber = (number) => {
 //                 secondNumber += keyValue  
 //             } else {
 //                 secondNumber = keyValue
-//             }
-//          }    
-//      }
-
-//     if (type === 'operator') {
-//        operator = keyValue
-
-//     } 
 
 //     console.log(firstNumber);
 //     console.log(secondNumber);
@@ -141,5 +133,3 @@ const inputNumber = (number) => {
 
 // //     console.log(numType.innerHTML);  
 // //     console.log({numType});  
-        
-// // });
