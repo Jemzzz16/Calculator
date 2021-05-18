@@ -42,8 +42,53 @@ background colour gradient
 google fonts
 box shadow for calculator
 
-
-calculator.dataset.previousKeyType = 'number' - refresh from remember operator to number 
----
+## calculator.dataset.previousKeyType = 'number' - refresh from remember operator to number
 
 </p>
+
+const clearBtn = document.querySelector('.all-clear')
+
+<!-- CLEAR FUNCTION -->
+
+})
+
+<!-- IDENTIFYING A NUMBER -->
+
+const inputNumber = (number) => {
+if (currentInput === '0') {
+currentInput = number
+} else {
+currentInput += number
+}
+}
+
+<!-- Identifying AN OPERATOR  -->
+
+const inputOperator = (operator) => {
+if (calculationOperator === '') {
+prevInput = currentInput
+}
+calculationOperator = operator
+currentInput = '0'
+}
+
+<!-- CALCULATIONS -->
+
+const calculate = () => {
+let result = 0
+switch(calculationOperator) {
+case '+':
+result = parseFloat(prevInput) + parseFloat(currentInput)
+break
+case '-':
+result = parseFloat(prevInput) - parseFloat(currentInput)
+break
+case '_':
+result = parseFloat(prevInput) _ parseFloat(currentInput)
+break
+case '/':
+result = parseFloat(prevInput) / parseFloat(currentInput)
+break
+default:
+return
+}
