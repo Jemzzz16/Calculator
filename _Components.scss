@@ -5,67 +5,67 @@ $color-grey: #dfa0a0;
 $color-peach: #f7a0b6;
 $color-hover: coral;
 
+///// HOVER
 .number:hover {
-    background-color: coral;
-  }
-  
-  .equal:hover {
-    background-color: coral;
-  }
-  
-  .operator:hover {
-    background-color: white;
-  }
-  
-  .one {
-    grid-area: one;
-  }
-  .two {
-    grid-area: two;
-  }
-  .three {
-    grid-area: three;
-  }
-  .four {
-    grid-area: four;
-  }
-  .five {
-    grid-area: five;
-  }
-  .six {
-    grid-area: six;
-  }
-  .seven {
-    grid-area: seven;
-  }
-  .eight {
-    grid-area: eight;
-  }
-  .nine {
-    grid-area: nine;
-  }
-  .zeros {
-    grid-area: zeros;
-  }
-  .decimal {
-    grid-area: decimal;
-  }
-  .ac-clear {
-    grid-area: clear;
-    background-color: $color-pink;
-    border-radius: 0.3rem;
-  }
-  .equal {
-    grid-area: equal;
-    background-color: $color-pink;
-    border-radius: 0.3rem;
-  }
-  
-  .operator {
-    background-color: $color-purple;
-    border-radius: 0.3rem;
-  }
-  .number {
-    background-color: $color-peach;
-    border-radius: 0.3rem;
-  }
+  background-color: coral;
+}
+.equal:hover {
+  background-color: coral;
+}
+.operator:hover {
+  background-color: white;
+}
+
+///// BUTTONS
+.one {
+  grid-area: one;
+}
+.two {
+  grid-area: two;
+}
+.three {
+  grid-area: three;
+}
+.four {
+  grid-area: four;
+}
+.five {
+  grid-area: five;
+}
+.six {
+  grid-area: six;
+}
+.seven {
+  grid-area: seven;
+}
+.eight {
+  grid-area: eight;
+}
+.nine {
+  grid-area: nine;
+}
+.zeros {
+  grid-area: zeros;
+}
+.decimal {
+  grid-area: decimal;
+}
+.ac-clear {
+  grid-area: clear;
+  background-color: $color-pink;
+  border-radius: 0.3rem;
+}
+.equal {
+  grid-area: equal;
+  background-color: $color-pink;
+  border-radius: 0.3rem;
+}
+
+.operator {
+  background-color: $color-purple;
+  border-radius: 0.3rem;
+}
+.number {
+  background-color: $color-peach;
+  border-radius: 0.3rem;
+}
