@@ -1,20 +1,22 @@
 const numbers = document.querySelectorAll(".number")
 const operators = document.querySelectorAll(".operator")
-const calculatorScreen = document.querySelector(".calculator__display")
+const calculatorDisplay = document.querySelector(".calculator__display")
 const equalSign = document.querySelector('.equal')
-const clearBtn = document.querySelector('.clear')
+const clearBtn = document.querySelector('.ac-clear')
 
 
-let firstNumber = '0'
+let firstNumber = ''
 let calcOperator = ''
-let secondNumber = '0'
+let secondNumber = ''
 
 const inputNumber = (number) => {
-    if (secondNumber === '0') {
+    if (secondNumber === '') {
       secondNumber = number
     } else {
       secondNumber += number
     }
+    
+    console.log(secondNumber);
   }
 
   const inputOperator = (operator) => {
@@ -22,9 +24,10 @@ const inputNumber = (number) => {
       firstNumber = secondNumber
     }
     calcOperator = operator
-    secondNumber = '0'
+    secondNumber = ''
   }
   
+ ///////// parseFloat - returns a number
   const calculate = () => {
     let result = 0
     switch(calcOperator) {
@@ -45,18 +48,17 @@ const inputNumber = (number) => {
     }
     secondNumber = result.toString()
     calcOperator = ''
-    firstNumber = '0'
+    firstNumber = ''
   }
   
   const clearAll = () => {
-    firstNumber = '0'
+    firstNumber = ''
     calcOperator = ''
-    secondNumber = '0'
+    secondNumber = ''
   }
   
-  
   const updateScreen = (number) => {
-    calculatorScreen.value = number
+    calculatorDisplay.value = number
   }
   
   numbers.forEach((number) => {
@@ -81,55 +83,3 @@ const inputNumber = (number) => {
     clearAll()
     updateScreen(secondNumber)
   })
-  
-
-
-
-  //////////////////////////////////////
-
-// keys.addEventListener('click', event => {
-//     const opKey = event.target  //operator
-//     const numType = event.target  //number
-//     const displayedNum = display.textContent //displaying numbers selected 
-//     const keyValue = numType.textContent //key value is the number key selected
-//     const type = event.target.dataset.type
-    
-//     if (type === 'number') {
-//         if (!operator) {
-            
-//             if (firstNumber) {
-//                 firstNumber += keyValue  
-//             } else {
-//                 firstNumber = keyValue
-//             }
-            
-//         } else if (operator) {
-//             if (secondNumber) {
-//                 secondNumber += keyValue  
-//             } else {
-//                 secondNumber = keyValue
-
-//     console.log(firstNumber);
-//     console.log(secondNumber);
-//     console.log(operator);
-// });
-
-
-// // keys.addEventListener('click', event => {
-// //     const opKey = event.target  //operator
-// //     const numType = event.target  //number
-// //     const displayedNum = display.textContent //displaying numbers selected 
-// //     const keyValue = opKey.textContent //key value is the number key selected
-
-// //     // DISPLAY NUMBERS - this allows for number to be displayed and subsequent numbers too
-// //     if (displayedNum === '0') { 
-// //         display.textContent = keyValue
-// //     } else {
-// //         display.textContent = displayedNum + keyValue
-
-// //     } if (numType === 'decimal') {
-// //         display.textContent = displayedNum + '.'
-// //     }
-
-// //     console.log(numType.innerHTML);  
-// //     console.log({numType});  

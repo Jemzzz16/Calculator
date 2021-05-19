@@ -92,3 +92,68 @@ break
 default:
 return
 }
+
+/\* if 80085 is typed something needs to happen
+
+const boobs = (boob) => {
+
+}
+java pop up needs 80085 clicks to close - naughty
+
+on click change back ground colour
+
+666 devil emoji pops up
+
+const boobs = () => {
+if (boobs === '80085') {
+return "BOOBS"
+}
+}
+
+//////////////////////////////////////
+
+// keys.addEventListener('click', event => {
+// const opKey = event.target //operator
+// const numType = event.target //number
+// const displayedNum = display.textContent //displaying numbers selected
+// const keyValue = numType.textContent //key value is the number key selected
+// const type = event.target.dataset.type
+
+// if (type === 'number') {
+// if (!operator) {
+
+// if (firstNumber) {
+// firstNumber += keyValue  
+// } else {
+// firstNumber = keyValue
+// }
+
+// } else if (operator) {
+// if (secondNumber) {
+// secondNumber += keyValue  
+// } else {
+// secondNumber = keyValue
+
+// console.log(firstNumber);
+// console.log(secondNumber);
+// console.log(operator);
+// });
+
+// // keys.addEventListener('click', event => {
+// // const opKey = event.target //operator
+// // const numType = event.target //number
+// // const displayedNum = display.textContent //displaying numbers selected
+// // const keyValue = opKey.textContent //key value is the number key selected
+
+// // // DISPLAY NUMBERS - this allows for number to be displayed and subsequent numbers too
+// // if (displayedNum === '0') {
+// // display.textContent = keyValue
+// // } else {
+// // display.textContent = displayedNum + keyValue
+
+// // } if (numType === 'decimal') {
+// // display.textContent = displayedNum + '.'
+// // }
+
+// // console.log(numType.innerHTML);  
+// // console.log({numType});

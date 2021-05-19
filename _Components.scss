@@ -1,3 +1,10 @@
+$color-purple: #d096f1;
+$color-pink: #f798f7;
+$color-white: #fffeff;
+$color-grey: #dfa0a0;
+$color-peach: #f7a0b6;
+$color-hover: coral;
+
 .number:hover {
     background-color: coral;
   }
@@ -43,19 +50,22 @@
   .decimal {
     grid-area: decimal;
   }
-  .clear {
+  .ac-clear {
     grid-area: clear;
+    background-color: $color-pink;
+    border-radius: 0.3rem;
   }
   .equal {
     grid-area: equal;
-    background-color: fuchsia;
+    background-color: $color-pink;
+    border-radius: 0.3rem;
   }
   
   .operator {
-    background-color: #e5b9fa;
+    background-color: $color-purple;
     border-radius: 0.3rem;
   }
   .number {
-    background-color: lightpink;
+    background-color: $color-peach;
     border-radius: 0.3rem;
   }
