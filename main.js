@@ -93,3 +93,10 @@ const inputNumber = (number) => {
     clearAll()
     updateScreen(secondNumber)
   })
+
+
+  ///// PROBLEMS 
+
+  // clicking between buttons brings up NaN
+  // DECIMAL POINT
+  // only Performs the last calculation, ignore the first
