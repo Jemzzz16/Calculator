@@ -4,11 +4,12 @@ const calculatorDisplay = document.querySelector(".calculator__display")
 const equalSign = document.querySelector('.equal')
 const clearBtn = document.querySelector('.ac-clear')
 
-
+//// allows for first and second numbers to change
 let firstNumber = ''
 let calcOperator = ''
 let secondNumber = ''
 
+//// inputNumber 
 const inputNumber = (number) => {
     if (secondNumber === '') {
       secondNumber = number
@@ -18,7 +19,7 @@ const inputNumber = (number) => {
     
     console.log(secondNumber);
   }
-
+/// input operator
   const inputOperator = (operator) => {
     if (calcOperator === '') {
       firstNumber = secondNumber
@@ -27,7 +28,9 @@ const inputNumber = (number) => {
     secondNumber = ''
   }
   
+  //////// CALCULATIONS 
  ///////// parseFloat - returns a number
+  ///// first + second = result 
   const calculate = () => {
     let result = 0
     switch(calcOperator) {
@@ -46,21 +49,27 @@ const inputNumber = (number) => {
       default:
         return
     }
+    //// stringifier method of the Location and returns a number 
     secondNumber = result.toString()
     calcOperator = ''
     firstNumber = ''
   }
   
+  //// Clearing all functions on screen '' - open string 
   const clearAll = () => {
     firstNumber = ''
     calcOperator = ''
     secondNumber = ''
   }
   
+  ///// Updating the screen to display value of the number 
   const updateScreen = (number) => {
     calculatorDisplay.value = number
   }
   
+
+  //// Allows for numbers to be displayed on screen. The target property of the Event interface is a reference to the object onto which the event was dispatched.
+  /// /// addEventListener() sets up a function that will be called whenever the specified event is delivered to the target.
   numbers.forEach((number) => {
     number.addEventListener(("click"), (event) => {
       inputNumber(event.target.value)
@@ -74,6 +83,7 @@ const inputNumber = (number) => {
     })
   })
   
+  //// Clearing and equals button, different events but still clear screen 
   equalSign.addEventListener("click", () => {
     calculate()
     updateScreen(secondNumber)
