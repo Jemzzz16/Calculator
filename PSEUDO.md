@@ -21,7 +21,7 @@
 - Java
 - CSS animation
 - 1-9
-- $times / AC / DEL
+- $times / AC / DEL?
 
 ## Code solutions
 
@@ -80,18 +80,6 @@ switch(calculationOperator) {
 case '+':
 result = parseFloat(prevInput) + parseFloat(currentInput)
 break
-case '-':
-result = parseFloat(prevInput) - parseFloat(currentInput)
-break
-case '_':
-result = parseFloat(prevInput) _ parseFloat(currentInput)
-break
-case '/':
-result = parseFloat(prevInput) / parseFloat(currentInput)
-break
-default:
-return
-}
 
 /\* if 80085 is typed something needs to happen
 
@@ -143,17 +131,17 @@ return "BOOBS"
 // // const opKey = event.target //operator
 // // const numType = event.target //number
 // // const displayedNum = display.textContent //displaying numbers selected
-// // const keyValue = opKey.textContent //key value is the number key selected
+/// const keyValue = opKey.textContent //key value is the number key selected
 
-// // // DISPLAY NUMBERS - this allows for number to be displayed and subsequent numbers too
-// // if (displayedNum === '0') {
-// // display.textContent = keyValue
-// // } else {
-// // display.textContent = displayedNum + keyValue
+// // DISPLAY NUMBERS - this allows for number to be displayed and subsequent numbers too
+// if (displayedNum === '0') {
+// display.textContent = keyValue
+// } else {
+// display.textContent = displayedNum + keyValue
 
-// // } if (numType === 'decimal') {
-// // display.textContent = displayedNum + '.'
-// // }
+// } if (numType === 'decimal') {
+// display.textContent = displayedNum + '.'
+// }
 
-// // console.log(numType.innerHTML);  
-// // console.log({numType});
+// console.log(numType.innerHTML);  
+// console.log({numType});

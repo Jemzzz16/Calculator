@@ -31,6 +31,8 @@ const inputNumber = (number) => {
   //////// CALCULATIONS 
  ///////// parseFloat - returns a number
   ///// first + second = result 
+
+  ///The switch statement evaluates an expression, matching the expression's value to a case clause, and executes statements associated with that case, as well as statements in cases that follow the matching case.
   const calculate = () => {
     let result = 0
     switch(calcOperator) {
